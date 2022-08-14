@@ -74,3 +74,10 @@ console.log("Entro al main.js");
     ]
 }
 `;
+const objeto_de_js = JSON.parse(json_colores);
+console.log (json_colores); //esto es el JSON puro
+console.log (objeto_de_js); //JSON transformado en objeto
+
+objeto_de_js.arrayColores.forEach(item => {
+    console.log(item.nombreColor);
+})
